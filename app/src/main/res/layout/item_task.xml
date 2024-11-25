@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:elevation="4dp"
+    android:background="?attr/selectableItemBackground"
+    android:radius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp">
+
+            <CheckBox
+                android:id="@+id/checkboxTask"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="#6200EE" />
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="8dp"
+                android:text="Description"
+                android:textColor="#212121"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/textViewDeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deadline"
+                android:textColor="#757575"
+                android:textSize="14sp"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/textViewStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Atrasado"
+                android:textSize="14sp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="italic"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/buttonEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:backgroundTint="#6200EE"
+                android:elevation="2dp"
+                android:padding="4dp"
+                android:text="Edit"
+                android:textColor="#212121" />
+
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:backgroundTint="#6200EE"
+                android:elevation="2dp"
+                android:padding="4dp"
+                android:text="Delete"
+                android:textColor="#212121" />
+
+            <Switch
+                android:id="@+id/checkboxNotify"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Notify"
+                android:textColor="#212121"
+                android:thumbTint="#6200EE"
+                android:trackTint="#BB86FC" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
